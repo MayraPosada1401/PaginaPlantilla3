@@ -1544,8 +1544,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .entries .item-entry {
   height: 100%;
+  width: 100%;
   background-color: #FFFFFF;
-  padding-bottom: 6rem;
+  padding-bottom: 18rem;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
   overflow: hidden;
@@ -1574,9 +1575,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  z-index: 1;
 }
 
 .entries .item-entry__thumb-link::after {
@@ -1632,8 +1630,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   font-family: "Libre Baskerville", serif;
   font-size: 2.8rem;
   line-height: 1.286;
-  margin-top: 0;
-  margin-bottom: 4.5rem;
+  margin-top: -15px;
+  margin-bottom: 3.5rem;
 }
 
 .entries .item-entry__title a {
@@ -1666,8 +1664,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   letter-spacing: .2rem;
   position: absolute;
   left: 50%;
-  bottom: 3.9rem;
   width: 100%;
+  margin-top: -20px;
   -webkit-transform: translate3d(-50%, 0, 0);
   -ms-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0);
@@ -3927,8 +3925,8 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
  * ## comments 
  * ------------------------------------------------------------------- */
 .comments-wrap {
-  padding: 4.5rem 0 7.2rem;
-  margin-top: 10.2rem;
+  padding: 1.2rem 0 7.2rem;
+  margin-top: -40px;
 }
 
 .comments-wrap h3 {
@@ -3986,10 +3984,14 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   width: 6.6rem;
   border-radius: 100%;
   vertical-align: bottom;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
 
 .comment__info {
   position: relative;
+  padding: 15px 20px;
 }
 
 .comment__info .comment__author {
@@ -4010,6 +4012,7 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   position: absolute;
   top: 0;
   right: 0;
+  padding-right: 15px;
 }
 
 .comment__meta .comment__time {
@@ -4032,11 +4035,17 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
   clear: both;
   margin: 1.5rem 0 0 0;
   padding: 0 175px 0 0;
+  padding: 10px 20px;
 }
 
 .comment ul.children {
   margin: 0;
   padding: 0;
+}
+
+.comment__content{
+  background-color: #E9D2F7 ;
+  border-radius: 25px;
 }
 
 .comment ul.children li {
